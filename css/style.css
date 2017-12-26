@@ -1,8 +1,17 @@
 .noPadding{
 	padding:0;
 }
+body{
+	background-color:#e6e6e6;
+}
+.container{
+	background-color:white;
+}
 .single-item{
-	border:1px solid black;
+	margin-top:10px;
+	margin-bottom:20px;
+	border:1px solid silver;
+	box-shadow:0 0 5px gray;
 	height:320px;
 }
 .top{
