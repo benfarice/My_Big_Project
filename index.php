@@ -12,7 +12,10 @@
 	            <div class="row">
 			<div class="col-md-3">
 			<div class="col-md-12 single-item noPadding">
-				<div class="top"></div>
+				<div class="top">
+				<img src="images/Apple_Watch.jpg">
+				<!-- class="img-responsive" --->				
+				</div>
 				<div class="bottom">
 				<h3 class="item-title">
 				<a href="product.php">				
@@ -28,7 +31,9 @@
 			</div></div>
 			<div class="col-md-3">
 			<div class="col-md-12 single-item noPadding">
-				<div class="top"></div>
+				<div class="top">
+				<img src="images/Apple_Watch.jpg">
+				</div>
 				<div class="bottom">
 				<h3 class="item-title">Beautifull Watch
 				</h3>	
@@ -41,7 +46,9 @@
 			</div></div>
 			<div class="col-md-3">
 			<div class="col-md-12 single-item noPadding">
-				<div class="top"></div>
+				<div class="top">
+				<img src="images/Apple_Watch.jpg">				
+				</div>
 				<div class="bottom">
 				<h3 class="item-title">Beautifull Watch
 				</h3>	
@@ -54,7 +61,9 @@
 			</div></div>
 			<div class="col-md-3">
 			<div class="col-md-12 single-item noPadding">
-				<div class="top"></div>
+				<div class="top">
+				<img src="images/Apple_Watch.jpg">
+				</div>
 				<div class="bottom">
 				<h3 class="item-title">Beautifull Watch
 				</h3>	
@@ -67,7 +76,9 @@
 			</div></div>
 			<div class="col-md-3">
 			<div class="col-md-12 single-item noPadding">
-				<div class="top"></div>
+				<div class="top">
+				<img src="images/Apple_Watch.jpg">
+				</div>
 				<div class="bottom">
 				<h3 class="item-title">Beautifull Watch
 				</h3>	
@@ -80,7 +91,9 @@
 			</div></div>
 			<div class="col-md-3">
 			<div class="col-md-12 single-item noPadding">
-				<div class="top"></div>
+				<div class="top">
+				<img src="images/Apple_Watch.jpg">				
+				</div>
 				<div class="bottom">
 				<h3 class="item-title">Beautifull Watch
 				</h3>	
@@ -93,7 +106,9 @@
 			</div></div>
 			<div class="col-md-3">
 			<div class="col-md-12 single-item noPadding">
-				<div class="top"></div>
+				<div class="top">
+				<img src="images/Apple_Watch.jpg">
+				</div>
 				<div class="bottom">
 				<h3 class="item-title">Beautifull Watch
 				</h3>	
