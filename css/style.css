@@ -1,0 +1,31 @@
+.noPadding{
+	padding:0;
+}
+.single-item{
+	border:1px solid black;
+	height:320px;
+}
+.top{
+	background:maroon;
+	height:200px;
+}
+.bottom{
+	
+	height:100px;
+}
+.item-title{
+	color:maroon;
+	margin-top:0;
+	margin-left:10px;
+	padding-top:10px;
+}
+.cutted-price{
+	font-size:20px;
+	margin-right:10px;
+}
+.discounted-price{
+	font-size:20px;
+	margin-right:10px;
+	color:maroon;
+	font-style:italic;
+}
