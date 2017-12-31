@@ -9,7 +9,7 @@
 		<script src="js/bootstrap.js"></script>
 		<style>
 		.btn{
-	                /*width:100%;*/
+	                
 			height:70px;
 			font-size:40px;
 			border-radius:0;
@@ -98,7 +98,7 @@
 			<div class="col-md-12 single-item noPadding">
 				<div class="top">
 				<img src="images/Apple_Watch.jpg">
-				<!-- class="img-responsive" --->				
+								
 				</div>
 				<div class="bottom">
 				<h3 class="item-title">
@@ -117,7 +117,7 @@
 			<div class="col-md-12 single-item noPadding">
 				<div class="top">
 				<img src="images/Apple_Watch.jpg">
-				<!-- class="img-responsive" --->				
+								
 				</div>
 				<div class="bottom">
 				<h3 class="item-title">
@@ -136,7 +136,7 @@
 			<div class="col-md-12 single-item noPadding">
 				<div class="top">
 				<img src="images/Apple_Watch.jpg">
-				<!-- class="img-responsive" --->				
+								
 				</div>
 				<div class="bottom">
 				<h3 class="item-title">

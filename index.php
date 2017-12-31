@@ -15,7 +15,7 @@
 			<div class="col-md-12 single-item noPadding">
 				<div class="top">
 				<img src="images/Apple_Watch.jpg">
-				<!-- class="img-responsive" --->				
+							
 				</div>
 				<div class="bottom">
 				<h3 class="item-title">
@@ -120,12 +120,7 @@
 				</div>			
 				</div>
 			</div></div>
-			<!--<div class="col-md-3"><div class="col-md-12 single-item">
-			</div>
-			<div class="col-md-3"><div class="col-md-12 single-item">
-			</div>
-			<div class="col-md-3"><div class="col-md-12 single-item">
-			</div>-->
+			
 	            </div>
 		</div><div class="clearfix"></div>
 	 	<?php include "includes/footer.php"; ?>
