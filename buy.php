@@ -11,7 +11,64 @@
 		<?php include "includes/header.php"; ?>
 		<div class="container">
 			<div class="page-header">
-			   <h2>Checkout </h2>
+			   <h2 class="pull-left">Checkout </h2>
+			   <div class="pull-right"><button class="btn btn-success"
+			   data-toggle="modal" data-target="#proceed_modal" 
+			   data-backdrop="static" data-keyboard="false">
+			   Proceed</button></div>
+			   <div id="proceed_modal" class="modal fade">
+				<div class="modal-dialog">
+				    <div class="modal-content">
+					<div class="modal-header">
+					   <button class="close" data-dismiss="modal">
+					   &times;</button>
+					</div>
+					<div class="modal-body">
+					   <form>
+						<div class="form-group">
+						   <label for="name">Name </label>
+						   <input type="text" class="form-control"
+						   placeholder="Full name" id="name">
+						</div>
+					        <div class="form-group">
+						   <label for="email">Email Address </label>
+						   <input type="email" class="form-control"
+						   placeholder="Email" id="email">
+						</div>
+						<div class="form-group">
+						   <label for="contact">Contact Number</label>
+						   <input type="text" class="form-control"
+						   placeholder="Contact Number" id="contact">
+						</div>
+						<div class="form-group">
+						   <label for="city">City</label>
+						   <input list="villes" class="form-control">
+						   <datalist id="villes" >
+							<option>Casablanca</option>
+							<option>Fes</option>
+							<option>Tetouane</option>
+							<option>Rabat</option>
+						   </datalist>
+						</div>
+						<div class="form-group">
+						   <label for="address">Delivery address</label>
+						   <textarea class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+						   <input type="submit" class="btn btn-danger
+						   btn-block btn-lg">
+						</div>
+					   </form>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn btn-default" data-dismiss="modal">
+					  Close
+					  </button>
+					</div>
+				    </div>
+				</div>
+			   </div>
+			   <div class="clearfix"></div>
 			</div>
 			<div class="panel panel-default">
 			    <div class="panel-heading">

@@ -80,7 +80,7 @@
 			<div class="col-md-12 single-item noPadding">
 				<div class="top">
 				<img src="images/Apple_Watch.jpg">
-				<!-- class="img-responsive" --->				
+								
 				</div>
 				<div class="bottom">
 				<h3 class="item-title">
