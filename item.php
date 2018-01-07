@@ -32,23 +32,24 @@ include "connection.php";
 			</ol>
 		</div>
 		<div class="row">
+           <?php
+            if(isset($_GET['item_id'])){
+            $sql = "select * from items where item_id = '$_GET[item_id]'";
+			$run = mysqli_query($conn,$sql);
+			while($rows = mysqli_fetch_assoc($run)){
+          ?>
 		   <div class="col-md-8">
-			<h3 class="product-page-title">Beautifull watch</h3>
-			<img src="images/Apple_Watch.jpg" class="img-responsive">
+			<h3 class="product-page-title"><?php echo $rows["item_title"]; ?></h3>
+			<img src="<?php echo $rows["item_image"]; ?>" class="img-responsive">
 			<h4 class="product-page-desc-head">Description</h4>
 			<div class="product-page-descr-detail">
-				<p>This is a beautifull watch This is a beautifull watch
-				This is a beautifull watch
-				</p>
-				<ul>
-				  <li>It's a beautifull</li>
-				  <li>Made of Metal</li>
-				  <li>An original and branded quality</li>
-				  <li>Free Shipping overall the country</li>
-				  <li>Pat Securely via <b>Cash on delivery</b> method</li>
-				</ul>
+				<?php echo $rows["item_description"]; ?>
 			</div>
 		   </div>
+            <?php  
+            }
+            } 
+            ?>
 		   <aside class="col-md-4">
 			
 			<a href="buy.php" class="btn btn-success btn-lg btn-block">
