@@ -1,5 +1,19 @@
 <?php 
+session_start();
 include "connection.php";
+if(isset($_GET['check_item_id'])){
+    $date = date('Y-m-d h:i:s');
+    $random_num = mt_rand();
+    if(isset($_SESSION['ref'])){
+        
+    }else{
+        $_SESSION['ref'] = $date.'_'.$random_num;
+    }
+    
+    $check_query = "insert into checkout (check_item,check_ref,check_timing) values (
+    '$_GET[check_item_id]','$_SESSION[ref]','$date')";
+    $check_run = mysqli_query($conn,$check_query);
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -93,6 +107,12 @@ include "connection.php";
 					</tr>
 				   </thead>
 				   <tbody>
+                    <?php 
+                    $check_select_query ="select * from checkout
+                    where check_ref = '$_SESSION[ref]'";
+                    $check_sel_run = mysqli_query($conn,$check_select_query);
+                    while($reader_check = mysqli_fetch_assoc($check_sel_run)){
+                    ?>
 					<tr>
 					   <td>1</td>
 					   <td>Beautiful watch</td>
@@ -105,18 +125,7 @@ include "connection.php";
 				           <td class="text-right"><b>100/=</b></td>
 					   
 					</tr>
-					<tr>
-					   <td>1</td>
-					   <td>Tea Cup set</td>
-				           <td>4</td>
-					   <td>
-					   <button class="btn btn-danger btn-sm">Delete
-					   </button></td>
-					   <td class="text-right"><b>150/=</b></td>
-					   
-				           <td class="text-right"><b>600/=</b></td>
-					  
-					</tr>
+					<?php } ?>
 				   </tbody>
 				</table>
 				<table class="table">
