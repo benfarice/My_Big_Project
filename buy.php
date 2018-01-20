@@ -24,8 +24,21 @@ if(isset($_GET['check_item_id'])){
 		<link rel="stylesheet" href="css/style.css" >
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
+        <script>
+        function ajax_func(){
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                document.getElementById('get_data').innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open('GET','buy_process.php',true);
+        xmlhttp.send();
+        }
+       
+        </script>
 	</head>
-	<body>
+	<body onload="ajax_func();">
 		<?php include "includes/header.php"; ?>
 		<div class="container">
 			<div class="page-header">
@@ -106,31 +119,8 @@ if(isset($_GET['check_item_id'])){
 					   
 					</tr>
 				   </thead>
-				   <tbody>
-                    <?php 
-                    $c = 1 ;
-                    $check_select_query ="select * from checkout c
-                    join items i on c.check_item = i.item_id
-                    where check_ref = '$_SESSION[ref]'";
-                    $check_sel_run = mysqli_query($conn,$check_select_query);
-                    while($reader_check = mysqli_fetch_assoc($check_sel_run)){
-                    $new_price = $reader_check['item_price'] - $reader_check['item_discount'];
-                    ?>
-					<tr>
-					   <td><?php echo $c; ?></td>
-					   <td><?php echo $reader_check['item_title']; ?></td>
-				           <td>1</td>
-					   <td>
-					   <button class="btn btn-danger btn-sm">Delete
-					   </button></td>
-					   <td class="text-right"><b><?php echo $new_price; ?>/=</b></td>
-					   
-				           <td class="text-right"><b>100/=</b></td>
-					   
-					</tr>
-					<?php 
-                    $c++;
-                    } ?>
+				   <tbody id="get_data">
+                    <!-- get data here -->
 				   </tbody>
 				</table>
 				<table class="table">
