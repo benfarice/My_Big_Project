@@ -46,6 +46,17 @@ if(isset($_GET['check_item_id'])){
         xmlhttp.open('GET','buy_process.php?check_id='+check_id,true);
         xmlhttp.send();
         }
+        function update_qty(check_qty,check_id){
+        //alert('check_id'+check_id+'check qty '+check_qty);
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                document.getElementById('get_data').innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open('GET','buy_process.php?check_qty='+check_qty+'&updated_check_id='+check_id,true);
+        xmlhttp.send();
+        }   
         </script>
 	</head>
 	<body onload="ajax_func();">
